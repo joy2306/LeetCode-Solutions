@@ -11,7 +11,7 @@ class Solution:
 
         if x0 == x1:
             # check if this is vertical line (all x are the same)
-            return all([x == x0 for x, _ in coordinates])
+            return all([x == x0 for x, y in coordinates])
 
         # 2 points define line, so find it's equation y = a*x + b
         a = (y0 - y1) / (x0 - x1)
